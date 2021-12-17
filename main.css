@@ -1,0 +1,112 @@
+:root {
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteSecundaria: 'Fredoka One', cursive;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    background: #4ecdc4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #556270,
+        #4ecdc4
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #556270, #4ecdc4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h2 {
+    font-family: var(--fuenteSecundaria);
+    text-align: center;
+    margin: 0;
+}
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.btn {
+    width: 100%;
+    background-color: rgb(51, 211, 195);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+.btn:hover {
+    background-color: rgb(25, 153, 140);
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col-md-6{
+    flex-basis: calc(50% - 5rem);
+}
+@media (min-width: 1100px) {
+    .row {
+        flex-direction: row;
+    }
+}
+input[type="text"],
+input[type="date"] {
+    width: 70%;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+input[type="text"],
+input[type="date"]:focus {
+    outline: none;
+}
+/* Formulario */
+.sombra {
+    margin-top: 100px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.sombra h2 {
+    margin-bottom: 25px;
+}
+.campos .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+/* Table */
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+thead {
+    background-color: #4dc4aa;
+}
+.contenido-table {
+    overflow-x: scroll;
+}
+th,
+td {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.domingo{
+    background-color: rgb(153, 202, 37);
+}
